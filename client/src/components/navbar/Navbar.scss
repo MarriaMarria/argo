@@ -1,12 +1,36 @@
+@import "../../style/mixins.scss";
+
 .navbar {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: var(--text-light-color);
     margin-bottom: 2rem;
 
     a {
         color: unset;
-        margin-right: 2rem;
+        margin: 0 2rem;
+
+        @include decor();
+    }
+
+
+    h1 {
+        // text-align: center;
+        margin: 0 auto;
+        font-size: 3rem;
+        padding-left: 2rem;
+
+        @include decor();
+
+    }
+
+    .navLinks {
+        font-size: 1.5rem;
+    }
+
+    .login {
+        @include decor();
     }
 }
 

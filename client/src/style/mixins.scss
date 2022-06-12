@@ -12,9 +12,6 @@
     color: var(--text-link-color);
     font-weight: bold;
 
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 @mixin card() {
@@ -22,4 +19,13 @@
     border-radius: 10px;
     background: var(--light-color);
     box-shadow: var(--box-shadow);
+}
+
+@mixin decor() {
+    text-shadow: 0px 0px 5px #ec8f25, 0px 0px 10px #fff719, 0px 0px 10px #b393d3,
+    0px 0px 20px #705b0f;
+    
+    &:hover {
+        -webkit-transform: scale(1.2); 
+    }
 }

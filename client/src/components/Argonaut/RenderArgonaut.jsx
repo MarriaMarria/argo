@@ -11,7 +11,6 @@ function RenderArgonaut({ argonaut, getArgonauts }) {
 
 
     return <div className="argonaut">
-        <a href="/">Test link</a>
         {argonaut.name && <h2 className="name">{argonaut.name}</h2>}
         {/* if title exists we will create H2 */}
         {argonaut.email && <p className="email">{argonaut.email}</p>}

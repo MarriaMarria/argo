@@ -5,6 +5,8 @@
         @include btn();
         background: var(--light-color);
         color: var(--primary-color);
+        margin: 0 2rem;
+        font-weight: bold;
     }
 }
 

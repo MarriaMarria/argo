@@ -2,12 +2,12 @@
 
 .argonaut {
     @include card();
-    margin: 2rem;
+    margin: 0.5rem 2rem;
 
     .name,
     .email,
     .info {
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
 
     .info {

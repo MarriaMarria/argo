@@ -5,9 +5,13 @@ import "./Navbar.scss";
 function Navbar() {
     return (
         <div className="navbar">
-            <Link to='/'><h1>Become an argonaut</h1></Link>
-            <Link to='/login'>Log in</Link>
-            <Link to='/register'>Register</Link>
+            <div>
+                <Link to='/'><h1 className="h1">Become an argonaut</h1></Link>
+            </div>
+            <div className="navLinks">
+                <Link to='/login' className='login'>Log in</Link>
+                <Link to='/register' className='register'>Register</Link>
+            </div>
         </div>
 
     )
