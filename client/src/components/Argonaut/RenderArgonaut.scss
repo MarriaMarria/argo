@@ -1,0 +1,24 @@
+@import "../../style/mixins.scss";
+
+.argonaut {
+    @include card();
+    margin: 2rem;
+
+    .name,
+    .email,
+    .info {
+        margin-bottom: 1rem;
+    }
+
+    .info {
+        color: var(--text-less-dark-color);
+        font-style: italic;
+    }
+
+    .btn-delete {
+        @include btn();
+        margin-right: 1rem;
+        background: var(--careful-color);
+        color: white;
+    }
+}

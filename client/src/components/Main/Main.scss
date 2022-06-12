@@ -1,0 +1,10 @@
+@import "../../style/mixins.scss";
+
+.main {
+    .btn-form-toggle {
+        @include btn();
+        background: var(--light-color);
+        color: var(--primary-color);
+    }
+}
+

@@ -1,0 +1,10 @@
+:root {
+  --primary-color: #721bff;
+  --light-color: #fff;
+  --text-dark-color: #3a3a3a;
+  --text-less-dark-color: rgb(96, 93, 93);
+  --careful-color: rgb(198, 38, 38);
+  --box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  --text-link-color: #721bff;
+  --text-light-color: #ffffff;
+  --dark-color: #ecf4f3; }
