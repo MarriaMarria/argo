@@ -10,8 +10,6 @@
     a {
         color: unset;
         margin: 0 2rem;
-
-        @include decor();
     }
 
 
@@ -20,8 +18,8 @@
         margin: 0 auto;
         font-size: 3rem;
         padding-left: 2rem;
-
-        @include decor();
+        text-shadow: 0px 0px 5px #ec8f25, 0px 0px 10px #fff719, 0px 0px 10px #b393d3,
+    0px 0px 20px #705b0f;
 
     }
 
@@ -29,7 +27,8 @@
         font-size: 1.5rem;
     }
 
-    .login {
+    .login,
+    .register {
         @include decor();
     }
 }
