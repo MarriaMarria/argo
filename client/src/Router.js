@@ -6,6 +6,8 @@ import {
     Route, 
     Routes 
 } from "react-router-dom";
+import Login from "./components/Auth/Login";
+import Register from "./components/Auth/Register";
 
 function Router() {
     return (
@@ -14,10 +16,10 @@ function Router() {
             <Main />
             {/* links to go to other pages */}
             <Routes>
-                {/* <Route path="/" element="{<Home />}"/> */}
-                <Route path="/login">Login</Route>
-                {/* whenever my domaine name is /login, render what is in this route */}
-                <Route path="/register">Register</Route>
+
+                <Route path="/login" element={<Login />} />
+
+                <Route path="/register" element={<Register />} />
             </Routes>
         </BrowserRouter>
     );

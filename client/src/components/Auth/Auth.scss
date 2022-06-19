@@ -1,0 +1,21 @@
+@import './../../style/mixins.scss';
+
+.auth-form {
+    @include card();
+
+    h2 {
+        margin-bottom: 1rem;
+        font-size: 1.7rem;
+    }
+
+    .btn-submit {
+        @include button();
+        margin-bottom: 1rem;
+        background: var(--primary-color);
+        color: var(--text-light-color);
+        &:hover {
+            box-shadow: var(--box-shadow);
+        }
+    }
+
+}
