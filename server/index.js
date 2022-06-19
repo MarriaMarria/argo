@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 dotenv.config(); // he will find an env file and then he will read a key from it
 const cors = require('cors');
+const port = process.env.PORT || 5555;
 
 const app = express();
 
@@ -20,9 +21,9 @@ app.use(cors({
     origin: "http://localhost:3000",
 }));
 
-mongoose.connect(process.env.MONGO_URL).then(
+mongoose.connect(process.env.DATABASE_URL).then(
     () => { console.log("connected to Mongo DB") },
     err => { console.log(err); }
 );
 
-app.listen(5555, () => console.log("Server is up and running on the port 5555"));
+app.listen(port, () => console.log(`Server is up and running on the port ${port}`));
